@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Poiret+One&family=Zen+Kurenaido&display=swap');
+    </style>
+    <script
+      src="https://kit.fontawesome.com/800665659c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./css/modal.css
+    "
+    />
+    <title>Cafe de Paris</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- ヘッダー -->
+      <header>
+        <div class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#accesse">Accesse</a></li>
+          </ul>
+          <div class="sns">
+            <a href="#"><i class="fa-brands fa-2x fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-2x fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="main-wrap">
+          <div class="mainImg"></div>
+          <div class="mainlogo">
+            <img src="./images/logo-black.png" alt="ロゴ" />
+          </div>
+        </div>
+      </header>
+      <!-- メインビジュアル -->
+      <div class="about" id="about">
+        <div class="aboutImg">
+          <img src="./images/about.jpg" alt="カフェの写真" />
+        </div>
+        <div class="aboutText">
+          <h1>Café de PARIS</h1>
+          <p>
+            <span class="open">早朝6時からオープン</span><br /><br />
+            「Café de PARIS」は、フランスのパリをモチーフにしたカフェです。<br />
+            "ゆっくり時を刻み、あなたの心を癒す場所にしたい。"<br />
+            そんな想いをもとに、モーニングからランチ、カフェまで、<br />いつでもゆっくり過ごせる雰囲気づくりをしています。<br />
+            また、店内にはWi-Fi・コンセントを完備していますので、<br />ビジネス利用にもぴったり。<br />
+            気軽に美味しいコーヒーを楽しみください。
+          </p>
+        </div>
+      </div>
+      <!-- イメージarea -->
+      <div class="imgArea1"></div>
+      <!-- メニュー -->
+      <div class="menu" id="menu">
+        <div class="menuText">
+          <h1>MENU</h1>
+          <p>
+            ランチタイムは、定番のパスタやカレー<br />
+            などの 日替わりランチ<br /><br />
+            西新宿だから交通の便もよく、<br />
+            お集まり・ショッピングなどにも最適<br />
+            お二人だけのランチタイムにいかがですか。
+          </p>
+          <div class="overlay" id="js-overlay"></div>
+          <div class="modal" id="js-modal">
+            <div class="modal-close__wrap">
+              <button class="modal-close" id="js-close">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="menu-wrap">
+              <div class="a">
+                <h2>coffee</h2>
+                <span>
+                  アメリカーノ・・・・・350 <br />
+                  カフェラテ・・・・・・400 <br />
+                  カフェモカ・・・・・・420 <br />
+                  カプチーノ・・・・・・420
+                </span>
+                <h2>pasta</h2>
+                プリムパスタ<br />
+                ナポリタン <br />
+                アラビアータ<br />
+                ・ALL 850・
+              </div>
+              <div class="b">
+                <h2>pizza</h2>
+                <span>
+                  ソーセージピザ・・・・1190<br />
+                  マルゲリータ・・・・・1200 <br />
+                  ボローニャ・・・・・・1490 <br />
+                  オルトラーナ・・・・・1490
+                </span>
+                <h2>dessert</h2>
+                プリン・・・・・・・・300<br />
+                ティラミス・・・・・・350 <br />
+                チョコレートケーキ・・350 <br />
+                アイスクリーム・・・・400
+              </div>
+            </div>
+          </div>
+
+          <button class="modal-open" id="js-open">メニュー</button>
+        </div>
+        <div class="menuImg">
+          <img src="./images/pasta.jpg" alt="メニュー" />
+          <img src="./images/pizza.jpg" alt="メニュー" />
+          <img src="./images/coffee.jpg" alt="メニュー" />
+          <img src="./images/cake.jpg" alt="メニュー" />
+        </div>
+      </div>
+      <!-- イメージarea -->
+      <div class="imgArea2"></div>
+      <!-- ニュース -->
+      <div class="news" id="news">
+        <div class="newsImg">
+          <img src="./images/666.jpg" alt="カフェの写真" />
+          <img src="./images/333.jpg" alt="カフェの写真" />
+        </div>
+        <div class="newsText">
+          <h1>NEWS</h1>
+          <div class="news-cover">
+            <div class="mainNews">
+              <a href="#" class="newsList">
+                <span class="newsTitle">
+                  新規サイトオープン企画
+                  Webサイトを見て特製ケーキをもらおう!</span
+                ><span class="date">2018.10.11</span></a
+              >
+              <hr />
+              <a href="#" class="newsList">
+                <span class="newsTitle"> 新作マカロン登場!!</span
+                ><span class="date">2018.10.11</span></a
+              >
+              <hr />
+              <a href="#" class="newsList">
+                <span class="newsTitle">
+                  お待たせ致しました!カフェ・ド・パリWebサイトをオープン致しました。</span
+                ><span class="date">2018.10.10</span></a
+              >
+              <hr />
+            </div>
+          </div>
+          <a href="#" class="newsAll">一覧を見る</a>
+        </div>
+      </div>
+      <!-- イメージarea -->
+      <div class="imgArea3"></div>
+      <!-- ACCESSE -->
+      <div class="accesse" id="accesse">
+        <div class="accesse-wrap">
+          <div class="accesseText">
+            <h1>Accesse</h1>
+            <p>
+              <br />
+              営業時間 6:00 ~ 22:00 <br />
+              〒 123-4567<br />
+              東京都新宿区 1-23-4<br />
+              新宿駅より徒歩2分<br />
+            </p>
+          </div>
+          <div class="contactText">
+            <h1>Contact</h1>
+            <p>
+              <br />
+              Mail: cafe_de_paris@hal.jp<br />
+              TEL: 080-1234-5678
+            </p>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405.05048006562146!2d139.69659366103843!3d35.691678599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188db4f3887ae7%3A0x3d4f3619214cc0ea!2z44Kz44Kv44O844Oz44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1670774950216!5m2!1sja!2sjp"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <!-- フッター -->
+      <footer>
+        <div class="logo">
+          <img src="./images/logo-black.png" alt="ロゴ" />
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            /
+            <li><a href="#">Menu</a></li>
+            /
+            <li><a href="#">News</a></li>
+            <!-- / -->
+          </ul>
+        </div>
+        <small>Copyright © Jaehyeon All Rights Reserved.</small>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="./js/main.js"></script>
+    </div>
+  </body>
+</html>
